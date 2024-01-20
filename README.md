@@ -16,7 +16,24 @@ Note that running `julia> using Pluto; Pluto.run()` in your Julia REPL is insuff
 
 ```julia
 julia> import Pluto; Pluto.run(require_secret_for_access=false, require_secret_for_open_links=false)
+┌ Info: 
+│   Welcome to Pluto v0.19.36 🎈
+│   Start a notebook server using:
+│ 
+│ julia> Pluto.run()
+│ 
+│   Have a look at the FAQ:
+│   https://github.com/fonsp/Pluto.jl/wiki
+└ 
+[ Info: Loading...
+┌ Info: 
+└ Go to http://localhost:1234/ in your browser to start writing ~ have fun!
+┌ Info: 
+│ Press Ctrl+C in this terminal to stop Pluto
+└ 
 ```
+
+Open your web browser and go to `http://localhost:1234/`. Then you are good to go. Enjoy Julia
 
 See [this issue](https://github.com/fonsp/Pluto.jl/issues/687#issuecomment-729159016) to learn more.
 
