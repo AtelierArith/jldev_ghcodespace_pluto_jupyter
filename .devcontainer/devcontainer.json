@@ -33,10 +33,7 @@
 	"forwardPorts": [1234, 8000, 8080, 8888],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": [
-		"julia -e 'using Pkg; Pkg.activate(); Pkg.add([\"Revise\", \"BenchmarkTools\", \"JuliaFormatter\", \"IJulia\", \"Pluto\", \"PlutoUI\"])'",
-		"julia --project=@. -e 'using Pkg; Pkg.instantiate()'"
-	],
+	"postCreateCommand": "julia script/postcreatecommand.jl"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
