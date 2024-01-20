@@ -1,34 +1,28 @@
-# jldev_ghcodespace_pluto_jupyter
+### Project Overview
 
-This project provides a develop environment base on [GitHub Codespaces](https://github.com/features/codespaces). Utilizing GitHub Codespace, the setup of Julia and Python with JupyterLab and/or Pluto notebook becomes a streamlined process.
+- **Name**: jldev_ghcodespace_pluto_jupyter
+- **Purpose**: To provide a development environment using GitHub Codespaces for Julia and Python, with support for JupyterLab and Pluto notebooks.
 
-## How to use
+### Key Features
 
-Just click the following badge:
+1. **Streamlined Setup**: Utilizes GitHub Codespaces for an easy setup process of Julia and Python environments.
+2. **Easy Access**: Can be accessed by clicking a badge link that leads to a setup page on GitHub Codespaces.
+3. **VS Code-like Experience**: Offers a development environment similar to Visual Studio Code.
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/terasakisatoshi/jldev_ghcodespace_pluto_jupyter?quickstart=1)
+### Usage Instructions
 
-You will see a development environment as if your are using VS Code.
+- **Launching a Pluto.jl Server**: 
+  - Standard methods like `using Pluto; Pluto.run()` in the Julia REPL are insufficient.
+  - Instead, use: `import Pluto; Pluto.run(require_secret_for_access=false, require_secret_for_open_links=false)`.
+  - This addresses an issue discussed [here](https://github.com/fonsp/Pluto.jl/issues/687#issuecomment-729159016).
 
-## How to launch a Pluto.jl server
+### Customization
 
-Note that running `julia> using Pluto; Pluto.run()` in your Julia REPL is insufficient. Use the following instruction:
+- **Julia Packages**: Edit `Project.toml` and commit both `Project.toml` and `Manifest.toml` (the latter is auto-generated).
+- **Python Environment**: Modify `.devcontainer/devcontainer.json` for further enhancements. Guidance can be found in the [GitHub Docs](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces).
 
-```julia
-julia> import Pluto; Pluto.run(require_secret_for_access=false, require_secret_for_open_links=false)
-```
+### References and Resources
 
-See [this issue](https://github.com/fonsp/Pluto.jl/issues/687#issuecomment-729159016) to learn more.
-
-## Customization
-
-- If you want to install Julia packages, edit `Project.toml` and update/commit `Project.toml` and `Manifest.toml`. Note that `Manifest.toml` is generated automatically via Julia package manager.
-- If you want to enhance a development environment, edit `.devcontainer/devcontainer.json` to add features about Python. See [the GitHub Docs](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces) to learn more.
-
-## References
-
-- https://github.com/features/codespaces
-- https://github.blog/changelog/2023-04-24-one-click-into-github-codespaces/
-- https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers
-- https://code.visualstudio.com/remote/advancedcontainers/environment-variables#_option-1-add-individual-variables
-- https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/setting-up-your-python-project-for-codespaces
+- GitHub Codespaces features: [GitHub](https://github.com/features/codespaces)
+- Recent changelogs and updates: [GitHub Blog](https://github.blog/changelog/2023-04-24-one-click-into-github-codespaces/)
+- General information on dev containers: [GitHub Docs on Dev Containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
