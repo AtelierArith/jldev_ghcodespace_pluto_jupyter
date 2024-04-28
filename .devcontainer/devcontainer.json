@@ -11,6 +11,7 @@
 		// https://github.com/devcontainers/features/tree/main/src/python#options
 		"ghcr.io/devcontainers/features/python:1": {
 			"installTools": true,
+			"toolsToInstall": "jupytext, ruff",
 			"installJupyterlab": true,
 			"optimize": false,
 			"version": "3.11"
@@ -23,7 +24,10 @@
 				"tamasfe.even-better-toml",
 				"ms-toolsai.jupyter",
 				"ms-python.python",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"congyiwu.vscode-jupytext",
+				"charliermarsh.ruff",
+				"wdawson.better-kill-ring"
 			]
 		}
 	},
