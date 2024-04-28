@@ -6,7 +6,7 @@ This project provides a development environment based on [GitHub Codespaces](htt
 
 Just click the following badge:
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/terasakisatoshi/jldev_ghcodespace_pluto_jupyter?quickstart=1)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/AtelierArith/jldev_ghcodespace_pluto_jupyter)
 
 You will see a development environment as if you are using VS Code. It's better to select a machine type with at least 4 cores. 8 cores is great!.
 See [Changing the machine type for your codespace](https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-machine-type-for-your-codespace) to learn more.
