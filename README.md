@@ -8,29 +8,29 @@ Just click the following badge:
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/terasakisatoshi/jldev_ghcodespace_pluto_jupyter?quickstart=1)
 
-You will see a development environment as if you are using VS Code.
+You will see a development environment as if you are using VS Code. It's better select 4 cores machine type at least. 8 cores is great!.
 
 ## How to launch a Pluto.jl server
 
-Note that running `julia> using Pluto; Pluto.run()` in your Julia REPL is insufficient. Use the following instruction:
+Note that running `julia> using Pluto; Pluto.run()` in your Julia REPL may be insufficient. You may want to follow the following instructions:
 
 ```julia
 julia> import Pluto; Pluto.run(require_secret_for_access=false, require_secret_for_open_links=false)
-┌ Info: 
+┌ Info:
 │   Welcome to Pluto v0.19.36 🎈
 │   Start a notebook server using:
-│ 
+│
 │ julia> Pluto.run()
-│ 
+│
 │   Have a look at the FAQ:
 │   https://github.com/fonsp/Pluto.jl/wiki
-└ 
+└
 [ Info: Loading...
-┌ Info: 
+┌ Info:
 └ Go to http://localhost:1234/ in your browser to start writing ~ have fun!
-┌ Info: 
+┌ Info:
 │ Press Ctrl+C in this terminal to stop Pluto
-└ 
+└
 ```
 
 Open your web browser and go to `http://localhost:1234/`. Then you are good to go. Enjoy Julia
