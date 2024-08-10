@@ -3,7 +3,7 @@
 {
 	"name": "JuliaPlutoJupyter",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
 	"features": {
 		"ghcr.io/julialang/devcontainer-features/julia:1": {
 			"channel": "release"

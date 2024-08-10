@@ -3,9 +3,10 @@ run(`jupytext-config set-default-viewer`)
 
 using Pkg
 
+# Activate the default shared environment.
 Pkg.activate()
 # Install development packages into the default shared environment.
-Pkg.add(["Revise", "BenchmarkTools", "JuliaFormatter", "IJulia", "Pluto", "PlutoUI"])
+Pkg.add(["Revise", "BenchmarkTools", "JuliaFormatter", "Pluto", "PlutoUI"])
 Pkg.precompile()
 
 
